@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: sm;
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+  padding: 20px;
+  text-align: center;
+  background: rgba(5, 104, 241, 0.512);
+  color: rgba(255, 228, 196, 0.697);
+  font-size: 30px;
+}
+
+.navBar {
+  display: flex;
+  flex-direction: row;
+  background: rgb(57, 157, 139);
+  justify-content: center;
+  position: sticky;
+  top: 0;
+}
+
+.navBar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navBar a:hover {
+  border: rgb(204, 233, 101) solid 1px;
+  color: rgb(204, 233, 101);
+  font-weight: bold;
+}
+
+.row {
+  display: flex;
+  font-display: row;
+  flex-wrap: wrap;
+}
+
+.side {
+  flex: 25%;
+  background: rgb(221, 221, 206);
+  padding: 20px;
+}
+
+.fakeImg {
+  background: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+.main {
+  flex: 75%;
+  background: white;
+  padding: 20px;
+}
+
+.footer {
+  padding: 3px;
+  text-align: center;
+  color: darkgray;
+  background: #ddd;
+  border-top: 2px double green;
+}
+
+@media screen and (max-width: 768px) {
+  .row,
+  .navBar {
+    flex-direction: column;
+  }
+}
